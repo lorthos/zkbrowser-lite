@@ -19,4 +19,6 @@ class node:
 
 app = web.application(urls, globals())
 app.internalerror = web.debugerror
-app.run()
+if __name__ == "__main__":
+    app.run()
+
